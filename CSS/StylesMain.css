@@ -1,5 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
+/*All pages styled with the same font for neatness and such, many of the styles 
+are also the same in order for elements, such as the title and footer, remain consistant throughout*/
 *{
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }

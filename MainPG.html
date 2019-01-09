@@ -3,22 +3,25 @@
 <head>
 <meta charset="utf-8">
 <title>MainPG</title>
+	<!--Different links to things such as AJAX, stylesheets and other JS files -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	
 	<script text="text/javascript" src="Java/MainJS.js"></script>
-	
+	<!-- CSS used to style main slideshow-->
 	<link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
 	
 	<link rel="stylesheet" type="text/css" href="CSS/StylesMain.css">
 </head>
 <body>
+	<!--Wrapper used to seperate everything from the footer-->
 <div id="wrapper">
 <section id="container_main">
 	<div id="main_title">	
   		<div id="main_dropdown">
 			<img src="Assets/converse test 2 (2).jpg" id="con_icon" alt="icon">
-			<div id="dropdown_content">			
+			<div id="dropdown_content">
+				<!--Simple dropdown used with HREF to link to other pages, same with main logo -->
 			  <a href="MainPG.html">Home</a>
 			  <a href="MenPG.html">Men</a>
 			  <a href="WomenPG.html">Women</a>
@@ -28,6 +31,7 @@
   	</div>
 </section>
 <section id="scrolling_page">
+	<!--carousel/ slideshow section contains multiple images and classes for description -->
 	<div class="owl-carousel">
 		<div>
 			<img src="Assets/ws_Red_Converse_All_Star_1366x768.jpg" alt="Red">
@@ -56,6 +60,7 @@
 </section>
 <section id="video_section">
 	<div id="video_container">
+		<!--Main container for videos, taken from YouTubes embedded IFrames system -->
 		<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/T7fHjmJrTaA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/bbLSOfubVcI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/daqcr7kkRHw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -64,17 +69,20 @@
 </section>
 <section id="demo">
 	<div id="demo_container">
+		<!--Main demo video of the website -->
 		<iframe id="demo_video" width="560" height="315" src="https://www.youtube.com/embed/TAtSZTKj8fg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>	
 </section>
 </div>
 <footer id="footer">
 	<div id="social_content">
+		<!--Footer contains links to other websites, with IMG tags embedded within A tags so that the image is placed under the A tag -->
 		<a href="https://www.facebook.com/converse/" target="_blank"><img src="Assets/iconfinder_2018_social_media_popular_app_logo_facebook_3225194.png" alt="Facebook"></a>
 		<a href="https://twitter.com/Converse" target="_blank"><img src="Assets/iconfinder_2018_social_media_popular_app_logo_twitter_3225183.png" alt="Twitter"></a>
 		<a href="https://www.instagram.com/converse/" target="_blank"><img src="Assets/iconfinder_2018_social_media_popular_app_logo_instagram_3225191.png" alt="Instagram"></a>
 		<a href="https://www.youtube.com/channel/UCfigptVgX1LGgUKZkQ2BZMQ" target="_blank"><img src="Assets/iconfinder_2018_social_media_popular_app_logo_youtube_3225180.png" alt="YouTube"></a>
 	</div>
+	<!--Main JS used for the carousel -->
 	<script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 </footer>	
 </body>
