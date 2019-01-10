@@ -1,15 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
-/*All pages styled with the same font for neatness and such, many of the styles 
+/*All pages styled with the same font for neatness and such, many of the styles
 are also the same in order for elements, such as the title and footer, remain consistant throughout*/
 *{
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 body{
-	min-height: 100%;
-	min-width: 100%;
 	padding: 0;
 	margin: 0;
+	width: 100%;
 }
 #wrapper{
 	min-height: calc(100vh - 100px);
@@ -21,7 +20,7 @@ body{
 	background-color: black;
 	top: 0;
 	left: 0;
-	padding-left: 15px;
+	display: inline-block;
 }
 #main_dropdown{
 	position: relative;
@@ -47,19 +46,20 @@ body{
 	padding: 12px 16px;
 	display: block;
 }
-#con_logo{
-	position: relative;
-	height: 150px;
-	max-width: 100%;
-	padding: 5px;
-	left: 2%;
-}
 #con_icon{
 	position:relative;
-	height: 150px;
-	width: 150px;
+	max-height: 150px;
+	max-width: 150px;
+	width: 15vw;
 	padding: 5px;
 	left: 5%;
+}
+#con_logo{
+	position: relative;
+	max-height: 150px;
+	max-width: 75%;
+	padding: 5px;
+	left: 2%;
 }
 .description_holder{
 	position: absolute;
@@ -77,42 +77,68 @@ body{
 	padding-right: 5px;
 }
 .img_des{
-	text-align: center; 
+	text-align: center;
 	padding-bottom: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
 }
 #video_container{
-	padding: 35px 35px 35px 185px;
-	margin: 5px;
+	width: 100%;
+	text-align: center;
+	padding: 10px 0px 5px 0px;
+	height: auto;
 }
 .video{
 	padding: 5px;
 }
-#video_container{
-	height: auto;
+#demo{
 	width: 100%;
+	text-align: center;
 }
 #demo_video{
-	padding-bottom: 20px;
-	padding-left: 450px;
-	margin: 25px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 #footer{
 	height: 100px;
 	background-color: black;
 }
 #social_content{
-	width: auto;
-	overflow: hidden;
-	height: inherit;
-	float: right;
-	padding-right: 595px;
-	
+	text-align: center;
+	height: 100px;
 }
 #social_content a img{
 	padding: 15px;
 }
+#social_content a{
+	display: inline;
+}
 .owl-carousel{
 	z-index: 0;
+}
+.owl-carousel img{
+	width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+	#dropdown_content{
+		display:block;
+		border-radius: 0;
+		min-width: 100%;
+		box-shadow: 0px 0px 0px 0px rgba(0,0,0);
+		transition: 0s;
+		z-index: 1;
+		margin-top:0px;
+		width: 100vw;
+	}
+	#con_logo{
+		position: relative;
+		max-height: 150px;
+		max-width: 75%;
+		padding: 5px;
+		left: 2%;
+	}
+	.video{
+		width: 100%;
+	}
 }
